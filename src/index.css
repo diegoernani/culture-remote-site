@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --coral: #F86C6B; }
+
+html, body { @apply bg-white text-slate-900; }
+
+.container-lg { @apply mx-auto max-w-6xl px-4; }
+
+.btn { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium transition; }
+.btn-primary { @apply bg-coral text-white hover:bg-coral/90; }
+.btn-secondary { @apply bg-white border border-slate-200 hover:bg-slate-50; }
+
+.card { @apply rounded-2xl border bg-white shadow-soft; }
+.badge { @apply inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium bg-white/60 backdrop-blur; }
